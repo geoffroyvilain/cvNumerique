@@ -1,0 +1,41 @@
+html
+{
+  background-image: url("image2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+li {
+ margin-left:20px;    /*ESPACEMENT ENTRE LES BOUTONS DU HEADER*/
+ float:left; /*pour IE*/
+ }
+ul li a {
+ display:block;
+ float:left;
+ width:100px;
+ background-color:#6495ED;
+ color:black;
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+ border:2px solid;
+ /*pour avoir un effet "outset" avec IE :*/
+ border-color:#DCDCDC #696969 #696969 #DCDCDC;
+ }
+
+
+
+
+/*ul nav{
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  }
+ul nav {
+  margin-left:2px;
+}*/
