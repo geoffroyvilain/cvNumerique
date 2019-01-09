@@ -1,13 +1,13 @@
-html
+/*html
 {
   background-image: url("image2.jpg"); /*APPEL DE L'IMAGE*/
-  background-attachment: fixed;        /*POUR FIXER L'IMAGE OU NON*/
-  background-repeat: no-repeat;        /*POUR REPETER L'IMAGE OU NON*/
-  background-size: cover;              /*MET L'IMAGE SUR TOUTE LA PAGE EN LARGEUR*/
-}
+/*  background-attachment: fixed;        /*POUR FIXER L'IMAGE OU NON*/
+/*  background-repeat: no-repeat;        /*POUR REPETER L'IMAGE OU NON*/
+/*  background-size: cover;              /*MET L'IMAGE SUR TOUTE LA PAGE EN LARGEUR*/
+*/
 
-nav#menu {
-  margin-left: 450px;
+nav{
+  /*margin-left: 450px;*/
   display: block;
   text-align: center;
   padding:0;
@@ -27,6 +27,7 @@ nav#menu {
   margin:20px;            /*ESPACEMENT ENTRE LES BOUTONS DU HEADER*/
   float:left;
  }
+/*
 
 #container1{
   height:500px;
@@ -90,3 +91,4 @@ ul li a.mailbox{
 ul#sociaux{
   list-style-type:none;
 }
+*/
