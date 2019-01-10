@@ -69,25 +69,193 @@ img#logogithub{
   height: 220px;
   list-style-type:none;
   }
-.coordonnees li{
+.coordonnees li {
   padding-top: 20px;
   font-size: 25px;
 }
-.coordonnees a{
+.coordonnees a {
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
-.coordonnees adresse{
+.coordonnees adresse {
   margin-top: 50px;
   margin-left: -9px;
 }
-.competences{
-  height:50px;
+.competences {
+  height:150px;
   text-align: center;
 }
-.textcomp{
+.textcomp {
+  height: 0 auto;
   font-size: 40px;
   text-align: center;
-  border: solid;
+  }
+
+/*IMAGE LOGO TIMELINE*/
+  #loge2n {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    margin-top: -103px;
+  }
+  #logc21 {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    margin-top: -103px;
+  }
+  #condorcet {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    margin-top: -103px;
+  }
+  #nerval {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    margin-top: -103px;
+  }
+  #wajs {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    margin-top: -103px;
+  }
+/*POUR QUE LES BOITES NE DÉPASSENT PAS SUR LA BARRE*/
+* {
+  box-sizing: border-box;
 }
+
+
+/* Set a background color  ON PEUT L'ENLEVER*/
+
+/* The actual timeline (the vertical ruler) TAILLE DE LA BARRE*/
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) POUR QU'ON VOIE LA BARRE */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content BOITES DE CHAQUE COTÉ*/
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline PRÉSENCE DES POINTS*/
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left PLACE LA BOITE A GAUCHE DE LA BARRE*/
+.left {
+  left: 0;
+}
+
+/* Place the container to the right PLACE LA BOITE A DROITE DE LA BARRE*/
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side PLACE LE POINT A GAUCHE POUR LES BOITES A DROITE */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content  CRÉE LA BOITE*/
+.content {
+  padding: 20px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 1.5em;
+  background-color: grey;
+  }
+/* Media queries - Responsive timeline on screens less than 600px wide ADAPTE LA TIMELINE POUR LES PETITS ÉCRANS*/
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
