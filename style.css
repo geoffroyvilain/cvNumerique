@@ -1,8 +1,26 @@
-body {
+.partie1 {
   background-image: url("image2.jpg"); /*APPEL DE L'IMAGE*/
   background-attachment: fixed;        /*POUR FIXER L'IMAGE OU NON*/
   background-repeat: no-repeat;        /*POUR REPETER L'IMAGE OU NON*/
   background-size: cover;              /*MET L'IMAGE SUR TOUTE LA PAGE EN LARGEUR*/
+}
+.partie2 {
+  background-image: url("binaire.jpg"); /*APPEL DE L'IMAGE*/
+  background-attachment: fixed;        /*POUR FIXER L'IMAGE OU NON*/
+  background-repeat: no-repeat;        /*POUR REPETER L'IMAGE OU NON*/
+  background-size: cover;              /*MET L'IMAGE SUR TOUTE LA PAGE EN LARGEUR*/
+}
+.partie3 {
+  background-image: url("formation.jpg"); /*APPEL DE L'IMAGE*/
+  background-attachment: fixed;        /*POUR FIXER L'IMAGE OU NON*/
+  background-repeat: no-repeat;        /*POUR REPETER L'IMAGE OU NON*/
+  background-size: cover;
+}
+.partie4 {
+  background-image: url("travail.jpg"); /*APPEL DE L'IMAGE*/
+  background-attachment: fixed;        /*POUR FIXER L'IMAGE OU NON*/
+  background-repeat: no-repeat;        /*POUR REPETER L'IMAGE OU NON*/
+  background-size: cover;
 }
 #identite {
   text-align:center;
@@ -41,6 +59,7 @@ nav {
  }
 
 img#moi{
+  width: 25%;
   float: left;
   border:1px solid silver;
   border-radius: 50px;    /*ARRONDIR L'IMAGE*/
@@ -64,29 +83,35 @@ img#logogithub{
   list-style-type: none;
   height: 100px;
 }
-/*reglage du nav*/
+/*REGLAGE COORDONNEES*/
+.photo {
+  width: 25%;
+}
 .coordonnees{
+  width: 75%
   height: 220px;
-  list-style-type:none;
   }
 .coordonnees li {
+  weight: 25%;
   padding-top: 20px;
   font-size: 25px;
 }
 .coordonnees a {
+  weight: 25%;
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
 .coordonnees adresse {
+  weight: 25%;
   margin-top: 50px;
   margin-left: -9px;
 }
-.competences {
+.titre {
   height:150px;
   text-align: center;
 }
-.textcomp {
+.texttitre {
   height: 0 auto;
   font-size: 40px;
   text-align: center;
@@ -150,6 +175,13 @@ img#logogithub{
   border-radius: 5%;
   margin-top: -103px;
 }
+.fiducial{
+  float: right;
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
+  margin-top: -103px;
+}
 /*POUR QUE LES BOITES NE DÉPASSENT PAS SUR LA BARRE*/
 * {
   box-sizing: border-box;
@@ -170,7 +202,7 @@ img#logogithub{
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: silver;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -248,7 +280,7 @@ img#logogithub{
   position: relative;
   border-radius: 6px;
   font-size: 1.5em;
-  background-color: grey;
+  background-color: white;
   }
 /* Media queries - Responsive timeline on screens less than 600px wide ADAPTE LA TIMELINE POUR LES PETITS ÉCRANS*/
 @media screen and (max-width: 600px) {

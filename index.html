@@ -3,12 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <title>Mon CV Numérique</title>
-  <link href="teststyle.css" rel="stylesheet" media="all" type="text/css">
+  <link href="style.css" rel="stylesheet" media="all" type="text/css">
 </head>
 <body>
+  <section class="partie1">
   <header>
-    <h1 id="identite">Geoffroy VILAIN</h1>
+    <h1 id="identite">Geoffroy VILAIN<br>Développeur Web Junior</h1>
+    <div class="photo">
+    <img id="moi" src="trombine.jpeg">
+  </div>
+    <div class="coordonnees">
+      <div class="adresse"><a href="ad1">30 Rue du Puits Souillé<br>
+        <a href="ad2" id="cp">02700 AMIGNY-ROUY</a></div>
+        <div class="numtel"><a href="number">06.03.20.35.92</a></div>
+        <div class="mailbox"><a href="admail">geoffroyvilain02@gmail.com</a></div>
+      </div>
+    </div>
+      <ul class="logo">
+        <li><a href="facebook" class="fb"><img id="logofb" src="facebookpetit.png" alt="logo Facebook"></a></li>
+        <li><a href="github" class="gh"><img id="logogithub" src="github.png" alt="logo Github"></a></li>
+      </ul>
   </header>
+  <div>
   <nav>
     <ul class="theme">
       <li class="menuItem"><a href="#identité">Présentation</a></li>
@@ -18,24 +34,16 @@
       <li class="menuItem"><a href="#loisirs">Loisirs</a></li>
     </ul>
   </nav>
-  <img id="moi" src="trombine.jpeg">
-  <ul class="coordonnees">
-    <li class="adresse"><a href="ad1">30 Rue du Puits Souillé<br>
-      <a href="ad2" id="cp">02700 AMIGNY-ROUY</a></li>
-      <li class="numtel"><a href="number">06.03.20.35.92</a></li>
-      <li class="mailbox"><a href="admail">geoffroyvilain02@gmail.com</a></li>
-    </ul>
-    <ul class="logo">
-      <li><a href="facebook" class="fb"><img id="logofb" src="facebookpetit.png" alt="logo Facebook"></a></li>
-      <li><a href="github" class="gh"><img id="logogithub" src="github.png" alt="logo Github"></a></li>
-    </ul>
-    <section>
+</div>
+</section>
+    <section class="partie2">
       <div>
-        <h1 class="competences">Mes compétences</h1>
+        <h1 class="titre">Compétences</h1>
       </div>
-      <p class="textcomp"> blablabla</p>
+      <p class="texttitre"> blablabla</p>
     </section>
-    <h1 class="formations">Mes formations</h1>
+    <section class="partie3">
+    <h1 class="titre">Formations</h1>
     <!--  TIMELINE FORMATIONS-->
     <div class="timeline">
       <div class="container left">
@@ -66,7 +74,7 @@
           <div class="content">
             <h2>2004</h2><img id="nerval" src="nerval.jpg"/>
             <p>Lycée G. de Nerval - SOISSONS (02)</p>
-            <p>Obtention BAC S.T.T. Comptabilité et Gestion des Organisatios</p>
+            <p>Obtention BAC S.T.T. Comptabilité et Gestion des Organisations</p>
           </div>
         </div>
         <div class="container left">
@@ -77,35 +85,45 @@
           </div>
         </div>
       </div>
+    </section>
       <section>
         <div>
           <h1 class="experience">Mes expériences</h1>
         </div>
         <p class="textexp"> blablabla</p>
       </section>
+      <section class="partie4">
       <!--  TIMELINE EXPERIENCES-->
       <div class="timeline">
         <div class="container left">
           <div class="content">
             <h2>2011 - 2018</h2><img class="logoc21" src="logoc21.png"/>
-            <p>CENTURY 21 CHAUNY (02)</p>
+            <p>CENTURY 21 - CHAUNY (02)</p>
             <p>Conseiller Location et Développement</p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
             <h2>2009 - 2011</h2><img class="lycee" src="corbu.jpeg"/>
-            <p>LYCEE DES METIERS LE CORBUSIER (02)</p>
+            <p>LYCEE DES METIERS LE CORBUSIER - SOISSONS (02)</p>
             <p>Assistant d'éducation et maître d'internat</p>
           </div>
         </div>
         <div class="container left">
           <div class="content">
             <h2>2008 - 2009</h2><img class="opel" src="opel.jpg"/>
-            <p>OPEL SAINT-QUENTIN (02)</p>
+            <p>OPEL - SAINT-QUENTIN (02)</p>
             <p>Réceptionnaire polyvalent</p>
           </div>
         </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2007 - 2008</h2><img class="fiducial" src="fiducial.png"/>
+            <p>FIDUCIAL EXPERTISE - LAON (02)</p>
+            <p>Assistant comptable</p>
+          </div>
+        </div>
       </div>
+    </section>
     </body>
     </html>
